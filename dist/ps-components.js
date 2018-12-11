@@ -314,7 +314,7 @@
             }, hasSearchKey;
           function combineMatch(token){
             return token.strict === false ?
-              "(?:\\/(" + token.match + ")|)" : "\\/(" + token.match + ")";
+              "(?:\\/(" + token.match + ")|)" : "\\/?(" + token.match + ")";
           }
           each(tokens, function(token, i){
             if(token.stable){
